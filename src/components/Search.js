@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from '@material-ui/core';
 import PeopleIcon from '@material-ui/icons/People';
+import { useHistory } from 'react-router-dom';
 // Date Range
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
@@ -8,6 +9,7 @@ import { DateRangePicker } from 'react-date-range';
 
 // Main:
 function Search() {
+  const history = useHistory();
   // State:
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
@@ -45,7 +47,9 @@ function Search() {
           <PeopleIcon></PeopleIcon>
         </h2>
       </div>
-      <Button id='date-range-final-btn'>Search Air</Button>
+      <Button id='date-range-final-btn' onClick={() => history.push('/search')}>
+        Search Air
+      </Button>
     </section>
   );
 }
