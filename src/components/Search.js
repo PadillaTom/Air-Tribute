@@ -31,7 +31,7 @@ function Search() {
   return (
     <section className='search-container'>
       <DateRangePicker
-        className='date-range-element'
+        id='date-range-element'
         ranges={[selectionRange]}
         onChange={handleSelect}
       ></DateRangePicker>
