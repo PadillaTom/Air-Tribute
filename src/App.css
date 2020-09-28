@@ -36,11 +36,53 @@ ul {
 }
 /* End Variables */
 
-/* ::::::::::::::::::: App Header ::::::::::::::::::::: */
-/* End App Header */
+/* ::::::::::::::::::: Header::::::::::::::::::::: */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: white;
+  height: 4rem;
+}
+.header-logo {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  flex: 0;
+  padding-left: 1.4rem;
+}
+.header-logo span {
+  color: coral;
+}
+.header-search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  max-width: fit-content;
+  border: 1px solid lightgray;
+  border-radius: 63rem;
+  padding: 0.2rem;
+}
+.header-search-container input {
+  border: none;
+  padding: 0.2rem;
+  outline-width: 0;
+}
+.header-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.4rem;
+}
+.header-info-icon {
+  margin-left: 0.4rem;
+}
+/* End Header */
 
-/* ::::::::::::::::::: App Header ::::::::::::::::::::: */
-/* End App Header */
+/* ::::::::::::::::::: Home::::::::::::::::::::: */
+
+/* End Home */
 
 /* ::::::::::::::::::: App Header ::::::::::::::::::::: */
 /* End App Header */
