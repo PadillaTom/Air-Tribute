@@ -102,7 +102,7 @@ ul {
     url('./images/oficina.jfif') center/cover no-repeat fixed;
 }
 .banner-info {
-  background: black;
+  background: rgba(0, 0, 0, 0.734);
   color: white;
   width: 45%;
   height: 100%;
