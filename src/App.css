@@ -31,7 +31,7 @@ ul {
 /* ::::::::::::::::::: Variables ::::::::::::::::::::: */
 :root {
   --MainBgColor: #fafafa;
-  --MainBtnColor: #6082a3;
+  --MainColor: #ff7779;
   --MainTransition: 0.3s ease all;
 }
 /* End Variables */
@@ -52,7 +52,7 @@ ul {
   padding-left: 1.4rem;
 }
 .header-logo span {
-  color: coral;
+  color: var(--MainColor);
 }
 .header-search-container {
   display: flex;
@@ -63,12 +63,18 @@ ul {
   border: 1px solid lightgray;
   border-radius: 63rem;
   padding: 0.2rem;
+  cursor: pointer;
+  transition: var(--MainTransition);
+}
+.header-search-container:hover {
+  border: 1px solid var(--MainColor);
 }
 .header-search-container input {
   border: none;
   padding: 0.2rem;
   outline-width: 0;
 }
+
 .header-info-container {
   display: flex;
   align-items: center;
@@ -78,14 +84,70 @@ ul {
 .header-info-icon {
   margin-left: 0.4rem;
 }
+#avatar-header {
+  background: var(--MainColor);
+  cursor: pointer;
+}
 /* End Header */
 
-/* ::::::::::::::::::: Home::::::::::::::::::::: */
+/* ::::::::::::::::::: Home ::::::::::::::::::::: */
 
 /* End Home */
 
-/* ::::::::::::::::::: App Header ::::::::::::::::::::: */
-/* End App Header */
+/* ::::::::::::::::::: Banner ::::::::::::::::::::: */
+.banner-section {
+  height: 75vh;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url('./images/oficina.jfif') center/cover no-repeat fixed;
+}
+.banner-info {
+  background: black;
+  color: white;
+  width: 45%;
+  height: 100%;
+  position: relative;
+}
+.banner-info-container {
+  width: 90%;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.banner-info-container h1 {
+  letter-spacing: 2px;
+  text-align: center;
+}
+.banner-info-container h5 {
+  letter-spacing: 1.1px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0.6rem auto;
+}
+.banner-info-container > button {
+  background: var(--MainColor);
+  margin-top: 1rem;
+  white-space: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: inherit;
+}
+.banner-info-container > button:hover {
+  color: white;
+  background-color: var(--MainColor);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.118);
+}
+@media screen and (min-width: 800px) {
+  .banner-info {
+    width: 30%;
+  }
+  .banner-info-container {
+    width: 70%;
+  }
+}
+
+/* End Banner */
 
 /* ::::::::::::::::::: App Header ::::::::::::::::::::: */
 /* End App Header */

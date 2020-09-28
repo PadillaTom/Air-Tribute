@@ -22,7 +22,7 @@ function Header() {
         <p>Become Host</p>
         <LanguageIcon className='header-info-icon'></LanguageIcon>
         <ExpandMoreIcon className='header-info-icon'></ExpandMoreIcon>
-        <Avatar className='header-info-icon'></Avatar>
+        <Avatar className='header-info-icon' id='avatar-header'></Avatar>
       </div>
     </header>
   );
